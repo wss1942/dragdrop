@@ -1,9 +1,8 @@
-# dragdrop
-# 拖拽 drag and drop
+# 拖拽 | drag and drop | 排序
 ## 依赖
 JQuery
 ## 用途
-可用于排序类的功能，通过拖拽子元素使其交换位置。
+可用于排序类的功能，通过拖拽使交换位置。
 ## 例子、说明
 ```html
 <ul id="dragDemo">
