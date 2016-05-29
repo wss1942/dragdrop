@@ -41,7 +41,7 @@ dragdrop方法有4个参数：
 * @param  {Function} ajaxFn    鼠标松开时的回调函数，参数对象的属性有dragId、dropId以及方法fn。一般修改排序都要通过ajax，fn方法在ajax成功后调用，来改变样式及html结构
 
 ## 逻辑
-拖拽开始：给你拖拽对象一个class样式A；
-进入一个可放置区域：给当前可放置区域一个class样式B；
-离开此区域：移除classB；
+拖拽开始：给你拖拽对象一个class样式A；  
+进入一个可放置区域：给当前可放置区域一个class样式B；  
+离开此区域：移除classB；  
 不离开，松开鼠标：拿到拖拽对象和放置对象的`data-id`，通过ajax改变他们两个的排序的序号。ajax成功后兑换两个对象的innerHtml，并移除移除class样式A和B。
