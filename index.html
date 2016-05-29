@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>拖拽 | Dran &amp; Drop</title>
+    <link rel="stylesheet" href="/css/my.css">
+    <script src="/js/jquery-1.12.2.js"></script>
+</head>
+
+<body>
+    <h1>JQuery插件：拖拽 | Dran &amp; Drop</h1>
+    <ul id="dragDemo">
+        <li class="item" draggable='true' data-id='1'>1</li>
+        <li class="item" draggable='true' data-id='2'>2</li>
+        <li class="item" draggable='true' data-id='3'>3</li>
+        <li class="item" draggable='true' data-id='4'>4</li>
+        <li class="item" draggable='true' data-id='5'>5</li>
+        <li class="item" draggable='true' data-id='6'>6</li>
+        <li class="item" draggable='true' data-id='7'>7</li>
+        <li class="item" draggable='true' data-id='8'>8</li>
+    </ul>
+</body>
+<script src="/js/drag.js"></script>
+<script>
+$('#dragDemo').dragdrop('li', 'item-drag', 'item-drop', function(obj) {
+    console.log(obj.dragId);
+    console.log(obj.dropId);
+    obj.fn();
+});
+</script>
+
+</html>
