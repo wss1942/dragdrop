@@ -62,6 +62,8 @@
             $(this).addClass(enterClass);
         }).delegate(childType, 'dragleave', function() {
             $(this).removeClass(enterClass);
+        }).delegate(childType, 'dragend', function() {
+            $(this).removeClass(dragClass);
         });
     }
 })(jQuery);
